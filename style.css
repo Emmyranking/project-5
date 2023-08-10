@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+body{
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 10px;
+    column-gap: 20px;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    margin-block: 40px;
+}
+.red, .black{
+    margin: 5px;
+}
+.black{
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+.black:hover{
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+.red{
+    padding: 5px;
+}
+.red:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+
+}
+.about  h2{
+    text-align: center;
+}
+.chef{
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.travel{
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+.blue{
+    padding: 5px;
+    margin: 5px;
+    background-color: #f1f1f1;
+}
+.footer a{
+    color: black;
+}
+.lorem{
+    width: 50px;
+}
+.post{
+    display: flex;
+    margin-bottom: 10px
+}
+.top{
+    /* margin-top: 10px; */
+    /* line-height: 30px; */
+    padding: 10px;
+}
+.sub-footer{
+   
+    display: flex;
+    margin-block: 40px;
+
+    
+    
+}
+.post:hover{
+    background-color: #ccc;
+}
+.popular{
+    width: 33.33%;
+    
+}
+.footer{
+    width: 33.33%;
+    
+}
+.blog{
+    width: 33.33%;
+    padding-inline: 10px;
+    
+}
+
+@media screen and (max-width:600px){
+    .sub-footer{
+        flex-direction: column;
+        
+    }
+    .popular, .footer, .blog{
+        width: 100%;
+    }
+}
+
+.container{
+    padding-inline: 40px;
+}
+
+.mar{
+    margin-bottom: 50px;
+    text-align: center
+}
+.up{
+    margin-top: 50px;
+}
+.up-1{
+    border-bottom: 1px solid #f1f1f1;
+    margin-block: 10px
+}
+
